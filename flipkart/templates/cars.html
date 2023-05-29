@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+</head>
+<body>
+    <h1>Cars List</h1>
+    {% url 'cars' %}
+    <ol>
+        {% for i in cars %}
+        <li>{{i.model}}-{{i.make}}-{{i.year}}</li>
+        {% endfor %}
+    </ol>
+</body>
+</html>
